@@ -6,3 +6,4 @@ This is a project to showcase HTML and CSS to build responsive websites as part 
 - CSS
 - Responsive Web Design
 - Git
+- Terminal Skills
