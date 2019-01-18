@@ -295,20 +295,23 @@ margin:10px;
 .mens{
     background: url(images/mens-category.jpg) no-repeat center;
     background-size:100% 100%; 
+    /* padding-right:5px;
+    padding-bottom:5px; */
 }
 
 .trends{
     background: url(images/trends-category.jpg);
     background-size:100% 100%;
     max-width:25%;
-    /* border-left :5px white solid;
-    border-right:5px white solid; */
+    /* padding-right:5px;
+    padding-bottom:5px; */
 }
 
 .glasses{
     background: url(images/glasses-category.jpg);
     background-size:100% 100%;
-    max-width:25%
+    max-width:25%;
+    /* padding-bottom:5px; */
 }
 
 .sales{
@@ -348,15 +351,23 @@ margin:10px;
 }
 
 .product-all{
-    margin: 35px;
-    display:flex;
-    justify-content: space-between;
-    max-width:100%;
+    border: dotted 1px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    padding-top: 40px;
 }
 
 .product p{
     color:#e2574c;
     font-size:20px;
+}
+
+.product{
+    width:25%;
+}
+
+.flickity-prev-next-button{
+    display:none;
 }
 
 #name{
@@ -368,12 +379,36 @@ margin:10px;
     background-size:cover;
     height:300px;
     color:white;   
+    border-bottom: 5px white solid;
+
 }
+
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+input[type="text"] {
+    max-width: 60%;
+    height: 20px;
+    padding-right: 50px;
+}
+
+input[type="submit"] {
+    margin-left: -98px;
+    width: 90px;
+    background-color: #e2574c;
+    color: white;
+    font-size: 12px;
+}
+
+
 
 
 .footer-position{
     width: 60%;
-    padding-left: 250px;
+    padding-left: 20%;
     padding-top:50px;
     text-align:center;
 }
@@ -416,7 +451,7 @@ margin:10px;
 
 .media{
     color:white;
-    padding-left:600px;
+    padding-left:55%;
     padding-top: 50px;
     line-height:2;
 }
@@ -428,6 +463,41 @@ a:hover{
 
 
 
+@media all and (max-width: 600px){
+
+    .logo img{
+        padding-left:20px;
+        max-width:100px;
+    }
+
+    .cart-img{
+        padding-left: 30px;
+    }
+    .media{
+        padding-left: 110px;
+    }
+
+    .product{
+        width:50%;
+    }
+
+    .footer-position{
+        min-width: 90%;
+        padding-left: 25px;
+    }
+
+    .footer-info{
+        padding-left:10px;
+    }
+
+
+
+    .newsletter{
+        background-size:auto;
+    }
+}
+
+
 @media all and (max-width: 480px){
 
     body{
@@ -435,7 +505,7 @@ a:hover{
     }
 
     .heading{
-        font-size:40px;
+        font-size:39px;
  
     }
 
@@ -524,7 +594,9 @@ a:hover{
 
    }
 
-   
+   .product{
+       width:100%;
+   }
    
    .newsletter{
        background-size:auto;
@@ -546,6 +618,8 @@ a:hover{
 
    .site-footer{
        flex-flow:column nowrap; 
+       padding-bottom: 40px;
+       padding-top: 40px;
    }
 
    .media{
@@ -569,19 +643,6 @@ a:hover{
 
 
 
-@media all and (max-width: 600px){
-
-
-
-    .footer-position{
-        min-width: 90%;
-        padding-left: 25px;
-    }
-
-    .newsletter{
-        background-size:auto;
-    }
-}
 
 
 
