@@ -153,6 +153,10 @@ body{
     display: flex;
     justify-content: space-around;
     height:100px;
+    background-color:white;
+    position:fixed;
+    width: 100%;
+    z-index:1;
 }
 
 .logo{
@@ -181,7 +185,7 @@ body{
 .main-navigation li a{
 color:#e2574c;
 text-decoration:none;
-margin:10px;
+margin:15px;
 }
 
 
@@ -206,8 +210,9 @@ margin:10px;
     margin:0 auto;
     height:500px;
     font-size:50px;
-    background: url(images/banner-girl.png) no-repeat center 75px, url(images/flower-bkgd.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)) ,url(images/banner-girl.png) no-repeat center 75px, url(images/flower-bkgd.jpg);
     background-size: contain;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
    
 }
 
@@ -228,6 +233,7 @@ margin:10px;
 .collection{
     font-size:20px;
     padding-bottom:20px;
+    text-transform: uppercase;
     
 }
 
@@ -266,7 +272,7 @@ margin:10px;
 }
 
 .products ul{
-    color:white;
+   
     text-transform: uppercase;
     font-size:25px;
     display:flex;
@@ -276,6 +282,11 @@ margin:10px;
 
 }
 
+.products a{
+    color:white;
+    text-decoration:none;
+}
+
 .products li{
     text-align:center;
     display: flex;
@@ -283,6 +294,10 @@ margin:10px;
     align-items: center;
 }
 
+.products span{
+    font-size: 35px;
+
+}
 
 .first{
     width:50%;
@@ -297,14 +312,14 @@ margin:10px;
 
 
 .mens{
-    background: url(images/mens-category.jpg) no-repeat center;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/mens-category.jpg) no-repeat center ;
     background-size:100% 100%; 
     border-right: white solid 7px;
     border-bottom: white solid 7px;
 }
 
 .trends{
-    background: url(images/trends-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/trends-category.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-right: white solid 7px;
@@ -312,28 +327,28 @@ margin:10px;
 }
 
 .glasses{
-    background: url(images/glasses-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)) ,url(images/glasses-category.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-bottom: white solid 7px;
 }
 
 .sales{
-    background: url(images/sale-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/sale-category.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-right: white solid 7px;
 }
 
 .bags{
-    background: url(images/bags-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/bags-category.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-right: white solid 7px;
 }
 
 .womens{
-    background: url(images/womens-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/womens-category.jpg);
     background-size:100% 100%;
 }
 
@@ -368,6 +383,10 @@ margin:10px;
      border: dotted 1px;
 }
 
+.nav-click{
+    border: dotted 1px #e2574c;
+}
+
 .product p{
     color:#e2574c;
     font-size:20px;
@@ -375,6 +394,10 @@ margin:10px;
 
 .product{
     width:25%;
+}
+
+.product-focus{
+    border: 1px dotted #fefec8;
 }
 
 .flickity-prev-next-button{
@@ -470,14 +493,24 @@ input[type="submit"] {
     line-height:2;
 }
 
-
-a:hover{
-    color:#b64036;
+.media-list a{
+    text-decoration:none;
+    color:white;
+    font-weight:200;
+    padding-left:10px;
 }
 
+a:hover{
+    color:#fefec8;
+}
 
+/* media query for 600 */
 
 @media all and (max-width: 600px){
+
+    body{
+        min-width: 600px;
+    }
 
     .heading {
         font-size:40px;
@@ -501,15 +534,32 @@ a:hover{
         
     }
 
+    .main-navigation li a{
+        margin:10px;
+    }
+
     .cart-img{
         padding-left: 45px;
         height:80px;
       
     }
 
+    .banner{
+        margin: 0 auto;
+        height: 380px;
+        font-size: 50px;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/banner-girl.png) no-repeat center 25px, url(images/flower-bkgd.jpg);
+        background-size: contain;
+
+    }
+
+    .banner-text{
+        padding-top:150px;
+    }
+
     .about{
         height:150px;
-        padding-top:70px;
+        padding-top:60px;
     }
 
     .description{
@@ -525,6 +575,7 @@ a:hover{
 
     .collection{
         font-size:20px;
+        text-transform:uppercase;
     }
 
     .media{
@@ -545,7 +596,7 @@ a:hover{
     }
 
     .featured{
-        height:600px;
+        height:550px;
         padding-top: 20px;
     }
 
@@ -573,22 +624,31 @@ a:hover{
     }
 }
 
+/* media query for 480 */
 
 @media all and (max-width: 480px){
 
     body{
-        min-width:100%;
+        min-width: 480px;
     }
 
     .heading{
-        font-size:39px;
+        font-size:35px;
  
     }
 
     .site-header{
         flex-wrap: wrap;
-        margin-bottom:40px;
+        margin-bottom:20px;  
+        display: flex;
+        justify-content: space-around;
+        height:100px;
+        position:relative;
 
+    }
+
+    .collection{
+        font-size:18px;
     }
 
    .logo{
@@ -625,20 +685,24 @@ a:hover{
    }
 
    .banner{
-    background: url("images/banner-girl.png") no-repeat center 50px, url("images/flower-bkgd.jpg");
-       background-size: 30%, cover;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("images/banner-girl.png") no-repeat center 55px, url("images/flower-bkgd.jpg");
+    background-size: cover,150px 370px,cover;;
+   }
+
+   .banner-text{
+       padding-top:150px;
    }
 
    .styles{
         min-width:100%;
-        font-size:40px;
         padding-top:10px;
         padding-bottom:5px;
    }
 
 
    .about{
-       padding-top:40px;
+       padding-top:55px;
+       height:150px;
    }
 
    .description {
@@ -648,13 +712,9 @@ a:hover{
     width: 450px;
 }
 
-   .mobile-wrap{
-       display:block;
-   }
+  
 
-   .about{
-       height:200px;
-   }
+
 
    .products ul{
        height:1000px;
