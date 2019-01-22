@@ -69,7 +69,7 @@ $(".sub").on("click", function() {
         if (target.length) {
           $("html, body").animate(
             {
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top-100
             },
             1000
           );
@@ -84,8 +84,8 @@ $(".sub").on("click", function() {
   $(".products span").on("focus", function(){
       $(this).addClass("product-focus");
   });
-  
-  $(".products ").on("blur", function() {
+
+  $(".products span").on("blur", function() {
     $(this).removeClass("product-focus");
   });
   });
