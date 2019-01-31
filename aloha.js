@@ -1,6 +1,6 @@
 
 $(function() {
-//email validation
+
 
 $(".sub").on("click", function() {
     //http://www.jquerybyexample.net/2011/04/validate-email-address-using-jquery.html
@@ -26,15 +26,15 @@ $(".sub").on("click", function() {
      $(sEmail).val(" ");
   });
   
-  //flickity carousel
+ 
   
   $(".product-all").flickity({
-    // options
+    
     cellAlign: "left",
     contain: true
   });
   
-  // border click
+
   
   $(".product-all").on("focus", function() {
     $(this).addClass("product-click");
@@ -45,7 +45,7 @@ $(".sub").on("click", function() {
   });
   
   
-  // border click
+
   
   $(".main-navigation li").on("focus", function() {
       $(this).addClass("nav-click");
@@ -55,7 +55,7 @@ $(".sub").on("click", function() {
       $(this).removeClass("nav-click");
     });
   
-  //smooth scroll
+
   
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -80,7 +80,7 @@ $(".sub").on("click", function() {
   });
 
 
-  // product hover
+
   $(".products span").on("focus", function(){
       $(this).addClass("product-focus");
   });

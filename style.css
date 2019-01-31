@@ -210,7 +210,7 @@ margin:15px;
     margin:0 auto;
     height:650px;
     font-size:50px;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)) ,url(images/banner-girl.png) no-repeat center 125px, url(images/flower-bkgd.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)) ,url(images/banner-girl-compressor.png) no-repeat center 125px, url(images/flower-bkgd-compressor.jpg);
     background-size: contain;
     text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
    
@@ -312,14 +312,14 @@ margin:15px;
 
 
 .mens{
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/mens-category.jpg) no-repeat center ;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/mens-category-compressor.jpg) no-repeat center ;
     background-size:100% 100%; 
     border-right: white solid 7px;
     border-bottom: white solid 7px;
 }
 
 .trends{
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/trends-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/trends-category-compressor.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-right: white solid 7px;
@@ -327,14 +327,14 @@ margin:15px;
 }
 
 .glasses{
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)) ,url(images/glasses-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)) ,url(images/glasses-category-compressor.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-bottom: white solid 7px;
 }
 
 .sales{
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/sale-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/sale-category-compressor.jpg);
     background-size:100% 100%;
     max-width:25%;
     border-right: white solid 7px;
